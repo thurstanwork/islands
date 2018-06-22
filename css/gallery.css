@@ -1,0 +1,32 @@
+.gallery {
+    display: inline-block;
+    margin-top: 4em;
+}
+
+.gallery-item {
+    margin: 20px 0;
+    filter: grayscale(1);
+    transition-duration: .3s;
+}
+
+.gallery-item:hover {
+    filter: grayscale(0);
+}
+
+.gallery figcaption {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: .3rem;
+}
+
+.gallery figcaption cite {
+    display: none;
+}
+
+.gallery figcaption i {
+    display: none;
+}
+
+.gallery figcaption small {
+    display: none;
+}

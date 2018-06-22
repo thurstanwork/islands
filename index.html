@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html>
 
 <head>
+    <meta charset="utf-8">
+    <title>Islands</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00b1b0">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="State Library Queensland">
+    <meta name="application-name" content="State Library Queensland">
+    <meta name="msapplication-TileColor" content="#00b1b0">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#00b1b0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -24,349 +34,342 @@
         })(window, document, 'script', 'dataLayer', 'GTM-WP2F37');
     </script>
     <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Islands</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i|Playfair+Display" rel="stylesheet"> </head>
 
 <body>
-    <header role="banner" id="fh5co-header">
+    <header role="banner" id="header">
         <div class="container">
-            <!-- <div class="row"> -->
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-                    <!-- Mobile Toggle Menu Button --><a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <a href="#" data-nav-section="home"><img src="images/slqmark_black.png" height="60px" alt="State Library Queensland" /></a>
+                    <!-- Mobile Toggle Menu Button --><a href="#" class="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                    <a href="#" data-nav-section="home">
+                        <svg id="slqmark-nav" width="50px" height="50px">
+                            <use class="slqmark-nav" href="#slqmark"></use>
+                        </svg>
+                    </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
-                        <li><a href="#" data-nav-section="about"><span>Islands</span></a></li>
-                        <!--
-						<li><a href="#" data-nav-section="island-1"><span>Island 1</span></a></li>
-						<li><a href="#" data-nav-section="island-2"><span>Island 2</span></a></li>
-                        <li><a href="#" data-nav-section="island-3"><span>Island 3</span></a></li>
-                        <li><a href="#" data-nav-section="island-4"><span>Island 4</span></a></li>
-                        <li><a href="#" data-nav-section="island-5"><span>Island 5</span></a></li>
-                        <li><a href="#" data-nav-section="island-6"><span>Island 6</span></a></li>
--->
-                        <li><a href="#" data-nav-section="learning"><span>Learning</span></a></li>
+                        <li><a href="#places-map" data-nav-section="about"><span>Islands</span></a></li>
+                        <li><a href="#Erub-Darnley-Island" data-nav-section="island-1"><span>Erub</span></a></li>
+                        <li><a href="#Lindeman-Island-Yarra-Kimba" data-nav-section="island-2"><span>Lindeman</span></a></li>
+                        <li><a href="#Fraser-Island-KGari" data-nav-section="island-3"><span>Fraser</span></a></li>
+                        <li><a href="#ST-Helena-Island-Noogoon" data-nav-section="island-4"><span>St Helena</span></a></li>
+                        <li><a href="#Peel-Island-Teerk-Ro-Ra" data-nav-section="island-5"><span>Peel</span></a></li>
+                        <!-- note not ready
+                        <li><a href="#" data-nav-section="learning"><span>Learning</span></a></li> -->
                     </ul>
                 </div>
             </nav>
-            <!-- </div> -->
         </div>
     </header>
-    <section id="home_panel" data-section="home">
-        <div class="container">
-            <div class="text-wrap">
-                <div class="text-inner">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="slqmark_logo"> <img src="images/slqmark.png" class="img-responsive" alt="State Library of Queensland" width="80px" /> </div>
+    <main>
+        <section id="splash" data-section="home">
+            <div class="container">
+                <div class="text-wrap">
+                    <div class="text-inner">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <svg id="slqmark-header" width="80px" height="80px">
+                                    <use class="slqmark-header" href="#slqmark"></use>
+                                </svg>
+                            </div>
+                            <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 text-center vis-id-block">
+                                <div class="vis-id-square">
+                                    <div class="vis-id-hero"> <img src="images/splash/islands-splash-hero@2x.jpg" width="100%" class="img-responsive" /> </div>
+                                    <h1 class="vis-id-title">Islands</h1> </div>
+                                <p class="vis-id-subtitle">HIDDEN HISTORIES FROM QUEENSLAND ISLANDS</p>
+                            </div>
                         </div>
-                        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 text-center">
-                            <h1 class="hidden_heading">Islands</h1>
-                            <div class="osg_vis_id"> <img src="images/islands_vid.png" width="100%" class="img-responsive" /> </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-10 col-sm-offset-1 text-center home_text">
-                            <p class="to-animate">HIDDEN HISTORIES FROM QUEENSLAND ISLANDS</p>
+                        <div class="row">
+                            <div class="col-sm-10 col-sm-offset-1 text-center home_text">
+                                <p>Free exhibition 30 Jun 2018 - 30 Jan 2019
+                                    <br /> State Library Queensland - Level 4, Philip Bacon Heritage Gallery</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="places-map" data-section="about">
-        <div class="map animate-fade-in"> <img src="images/map.png" alt="Map of Western Union Locations" width="100%" class="img-responsive" />
-            <div class="map-pins">
-                <a class="map-location-marker marker-erub" data-map-title="Erub &bull; Darnley Island" data-map-link="erub" data-map-image="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, ex ut gravida" data-job-listings="#Erub-Darnley-Island"></a>
-                <a class="map-location-marker marker-lindeman" data-map-title="Linderman Island &bull; Yarra-Kimba" data-map-link="lindeman" data-map-image="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, ex ut gravida" data-job-listings="#Linderman-Island-Yarra-Kimba"></a>
-                <a class="map-location-marker marker-fraser" data-map-title="Fraser Island &bull; K'Gari" data-map-link="fraser" data-map-image="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, ex ut gravida" data-job-listings="#Fraser-Island-KGari"></a>
-                <a class="map-location-marker marker-sthelena" data-map-title="ST Helena Island &bull; Noogoon" data-map-link="sthelena" data-map-image="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, ex ut gravida" data-job-listings="#ST-Helena-Island-Noogoon"></a>
-                <a class="map-location-marker marker-peel" data-map-title="Peel Island &bull; Teerk Ro Ra" data-map-link="peel" data-map-image="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit, ex ut gravida" data-job-listings="#Peel-Island-Teerk-Ro-Ra"></a>
+        </section>
+        <section id="places-map" data-section="about">
+            <div class="map animate-fade-in"> <img src="images/map.svg" alt="Map of Western Union Locations" width="100%" class="img-responsive" />
+                <div class="map-pins">
+                    <a class="map-location-marker marker-erub" data-map-title="Erub &bull; Darnley Island" data-map-link="erub" data-job-listings="#Erub-Darnley-Island"></a>
+                    <a class="map-location-marker marker-lindeman" data-map-title="Lindeman Island &bull; Yarra-Kimba" data-map-link="lindeman" data-job-listings="#Lindeman-Island-Yarra-Kimba"></a>
+                    <a class="map-location-marker marker-fraser" data-map-title="Fraser Island &bull; K'Gari" data-map-link="fraser" data-job-listings="#Fraser-Island-KGari"></a>
+                    <a class="map-location-marker marker-sthelena" data-map-title="ST Helena Island &bull; Noogoon" data-map-link="sthelena" data-job-listings="#ST-Helena-Island-Noogoon"></a>
+                    <a class="map-location-marker marker-peel" data-map-title="Peel Island &bull; Teerk Ro Ra" data-map-link="peel" data-job-listings="#Peel-Island-Teerk-Ro-Ra"></a>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="islands-intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12  text-center">
-                    <h2 class="">The Islands</h2> </div>
-                <div class="section-text col-sm-8 col-sm-offset-2 col-xs-12">
-                    <p>From Moreton Bay in the south to the Torres Strait in the north, the 1,995 islands that lie scattered along the coastline adorn Queensland like a jewelled necklace. However, not all that glitters is gold. While we tend to think of islands as sunny, tropical, paradises of leisure and pleasure, there is often a darker side to their history. What lies beneath the romantic iconography generated by the sparkling advertising campaigns of the latter 20th Century is hidden from view and gone from living memory.</p>
-                    <p>Islands are, essentially, confined spaces. Confined spaces surrounded by open water, and out of sight / out of mind of the general mainland population. Life is approached differently on islands — the tempo or energy of life on an island is different. And its isolation can play a major part in the behaviour of its inhabitants.</p>
-                    <p>Far from being places of peace and tranquility, after the arrival of Europeans many islands became the scene of treachery and deception, violence and vengeance, life and death and the struggle for survival and resources. There are, however, stories of triumph juxtaposed against those tragic tales, where love and family and home win out in the end and against the odds. State Library of Queensland proudly presents some of these stories in Islands: hidden histories from Queensland islands, using material drawn from our incredibly rich heritage collections.</p> <i>This site contains images of and references to people who have passed away which may cause sadness or distress, particularly to Aboriginal and Torres Strait Islander people.
+        </section>
+        <section id="islands-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12  text-center">
+                        <h2 class="">The Islands</h2> </div>
+                    <div class="section-text col-sm-8 col-sm-offset-2 col-xs-12">
+                        <p>From Moreton Bay in the south to the Torres Strait in the north, the 1,995 islands that lie scattered along the coastline adorn Queensland like a jewelled necklace. However, not all that glitters is gold. While we tend to think of islands as sunny, tropical, paradises of leisure and pleasure, there is often a darker side to their history. What lies beneath the romantic iconography generated by the sparkling advertising campaigns of the latter 20th Century is hidden from view and gone from living memory.</p>
+                        <p>Islands are, essentially, confined spaces. Confined spaces surrounded by open water, and out of sight / out of mind of the general mainland population. Life is approached differently on islands — the tempo or energy of life on an island is different. And its isolation can play a major part in the behaviour of its inhabitants.</p>
+                        <p>Far from being places of peace and tranquility, after the arrival of Europeans many islands became the scene of treachery and deception, violence and vengeance, life and death and the struggle for survival and resources. There are, however, stories of triumph juxtaposed against those tragic tales, where love and family and home win out in the end and against the odds. State Library of Queensland proudly presents some of these stories in Islands: hidden histories from Queensland islands, using material drawn from our incredibly rich heritage collections.</p> <i>This site contains images of and references to people who have passed away which may cause sadness or distress, particularly to Aboriginal and Torres Strait Islander people.
 State Library welcomes any further insights and information about the historic photographs within.</i> </div>
-            </div>
-        </div>
-    </section>
-    <section id="Erub-Darnley-Island" data-section="island-1" class="darkblue-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">Erub &bull; Darnley Island</h2> </div>
-                <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/erub/erub01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
-                    <p>Before the arrival of Christianity, Erub Islanders’ history already stretched back thousands of years. Their relationship with place, land, sky and sea was profound and endures to this day. The Islanders were also highly skilled fishermen, hunters and agriculturalists as well as fearless warriors who defended their territory with fierce determination.</p>
-                    <p>On 1 July 1871, representatives from the London Missionary Society arrived at Erub, named Darnley Island by Captain William Bligh in 1792, in the Torres Strait. The arrival of Christianity had a profound impact on the island and across the Torres Strait. Once accepted by Erub’s leader, Christianity spread quickly throughout the Torres Strait bringing about momentous change to traditional religious and political structures, ultimately leading to peace and stability in a region once wracked by inter-island clashes and raids by Papua New Guineans. Their success was due in part to incorporating traditional beliefs, language and culture into Christian rituals and ceremonies, and in places aided by Pacific Islanders being employed to minister to the local people. </p>
-                    <p>The Torres Strait Islander experience of colonial authority was different to that of mainland Aboriginal Australians in that they were generally not dispossessed of their lands as Aboriginal people had been on mainland Australia. Islanders were also protected from the worst principles of The Aboriginal Protection and Restriction of the Sale of Opium Act 1897 by the long-serving resident magistrate, John Douglas. However, when Douglas died in 1904, the state government installed a Protector who began to apply ‘the Act’ to restrict the lives of Islanders more and more, including their labour and earnings and movement between islands and to the mainland.</p>
-                    <p>In 1936, 70 per cent of the population went on a nine-month general strike, angered by the government’s increasing control over their lives. Reforms were agreed to and new Protector Cornelius O’Leary established regular consultations with elected Islander councils who were given a degree of autonomy.</p>
-                    <p>Referred to as ‘Ailan Kastom’ and incorporating elements from neighbouring Papua New Guinea and the regions of the Pacific, people of the Torres Strait Islands identify as belonging to the cultural group of the Torres Strait — a shining example of a vibrant and dynamic multicultural society that honours their oral traditions, languages, customs, beliefs and artistic expression. Nothing demonstrates this more than the art of the Torres Strait which is celebrated around the world, telling ancient and contemporary stories together, using multicultural techniques.</p>
-                    <p>In keeping with strong oral tradition and cultural beliefs, ‘The Coming of the Light’ anniversary is celebrated every year by Torres Strait Islanders.</p>
                 </div>
             </div>
-            <!--  end row-->
-            <div class="row">
-                <div class="list-group gallery col-sm-8 col-sm-offset-2">
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images\erub\erub01.jpg"> <img class="img-responsive" alt="" src="images\erub\erub01-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images\erub\erub02.jpg"> <img class="img-responsive" alt="" src="images\erub\erub02-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images\erub\erub03.jpg"> <img class="img-responsive" alt="" src="images\erub\erub03-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
+        </section>
+        <section id="Erub-Darnley-Island" data-section="island-1" class="darkblue-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="">Erub &bull; Darnley Island</h2> </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/erub/erub01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
+                        <p>Before the arrival of Christianity, Erub Islanders’ history already stretched back thousands of years. Their relationship with place, land, sky and sea was profound and endures to this day. The Islanders were also highly skilled fishermen, hunters and agriculturalists as well as fearless warriors who defended their territory with fierce determination.</p>
+                        <p>On 1 July 1871, representatives from the London Missionary Society arrived at Erub, named Darnley Island by Captain William Bligh in 1792, in the Torres Strait. The arrival of Christianity had a profound impact on the island and across the Torres Strait. Once accepted by Erub’s leader, Christianity spread quickly throughout the Torres Strait bringing about momentous change to traditional religious and political structures, ultimately leading to peace and stability in a region once wracked by inter-island clashes and raids by Papua New Guineans. Their success was due in part to incorporating traditional beliefs, language and culture into Christian rituals and ceremonies, and in places aided by Pacific Islanders being employed to minister to the local people. </p>
+                        <p>The Torres Strait Islander experience of colonial authority was different to that of mainland Aboriginal Australians in that they were generally not dispossessed of their lands as Aboriginal people had been on mainland Australia. Islanders were also protected from the worst principles of The Aboriginal Protection and Restriction of the Sale of Opium Act 1897 by the long-serving resident magistrate, John Douglas. However, when Douglas died in 1904, the state government installed a Protector who began to apply ‘the Act’ to restrict the lives of Islanders more and more, including their labour and earnings and movement between islands and to the mainland.</p>
+                        <p>In 1936, 70 per cent of the population went on a nine-month general strike, angered by the government’s increasing control over their lives. Reforms were agreed to and new Protector Cornelius O’Leary established regular consultations with elected Islander councils who were given a degree of autonomy.</p>
+                        <p>Referred to as ‘Ailan Kastom’ and incorporating elements from neighbouring Papua New Guinea and the regions of the Pacific, people of the Torres Strait Islands identify as belonging to the cultural group of the Torres Strait — a shining example of a vibrant and dynamic multicultural society that honours their oral traditions, languages, customs, beliefs and artistic expression. Nothing demonstrates this more than the art of the Torres Strait which is celebrated around the world, telling ancient and contemporary stories together, using multicultural techniques.</p>
+                        <p>In keeping with strong oral tradition and cultural beliefs, ‘The Coming of the Light’ anniversary is celebrated every year by Torres Strait Islanders.</p>
                     </div>
                 </div>
-                <!-- list-group / end -->
-            </div>
-            <!-- row / end -->
-        </div>
-    </section>
-    <section id="Linderman-Island-Yarra-Kimba" data-section="island-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">Linderman Island &bull; Yarra-Kimba</h2> </div>
-                <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/linderman/linderman03-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
-                    <p>Located in the heart of the Whitsunday group of islands, Lindeman Island remained untouched by Europeans until 120 years ago. Passing through the area, Captain Cook recorded Aboriginal people paddling an outrigger canoe of a type he had not encountered. In 1802, Captain Flinders reported campfires on nearby Whitsunday Island and in 1868, Commander Bingham, aboard the Virago, stated Lindeman was ‘the only island in the area where natives were seen…’</p>
-                    <p>Like other parts of Australia, the Ngaro people were involved in conflicts with Europeans moving onto their traditional lands. Developing a reputation for being fiercely independent and eluding capture in the 1860s, they reportedly ‘chased off’ ships moored in the area, even boarding them and setting them alight. Despite their resistance, the Ngaro population plummeted. They too succumbed to disease and ‘dispersal’, mostly to Palm Island. Many were recruited into the pearling industry in the Torres Strait.</p>
-                    <p>The beauty and wonder of the island group soon came to the attention of others.</p>
-                    <p>Marine biologist and Queensland’s Commissioner of Fisheries (1889-92), Englishman William Saville-Kent arrived to survey the state’s oyster sites. Instead, he fell instantly in love with the marine ecosystem. After publishing his research in The Great Barrier Reef of Australia: Its Products and Potentialities (1893), scientific interest grew, culminating in the formation of the Great Barrier Reef Committee of the Royal Geographic Society of Australasia in 1922. An early expedition to Lindeman Island studied the reef in 1923.</p>
-                    <p>Early expeditioner and school teacher Monty Embury was joined by his brother Arch and photographer friend Otho Webb, along with Mel Ward, guest lecturer and crustacean expert from the Australian Museum, and other helpers on the first ‘Embury Expedition’. It was hailed a success with 100 people enrolling in the scientific-based recreational holiday over four weeks in 1928-29.</p>
-                    <p>The Nicolson family, wool producers on Lindeman Island since 1923, hosted the expedition. Overnight they became tourism operators, taking advantage of the boom before and after the Second World War. Renowned Brisbane-based architect Karl Langer was commissioned to design part of the complex.</p>
-                    <p>Exotic images of coconut palms and Indigenous people dressed in grass skirts and leis performing the hula and hunting turtles mimicked classic Pacific symbolism. Aboriginal, Torres Strait Islander and Australian South Sea Islander people were recruited as a source of cheap labour on the islands.</p>
-                    <p>Lindeman Island was sold to P&amp;O in 1978. Pictorial representation of an idealised ‘Pacific Islander’ trope disappeared from the promotional material, reflecting changing attitudes in the late 1960s and early 1970s as well as the final disappearance of the Ngaro from their island homes.</p>
-                    <p>The island resort was closed in 2011 following extensive damage caused by Cyclone Yasi. It is set to undergo a $600 million eco-tourism upgrade and is expected to reopen by 2022.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="list-group gallery col-sm-8 col-sm-offset-2">
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/linderman/linderman01.jpg"> <img class="img-responsive" alt="" src="images/linderman/linderman01-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/linderman/linderman02.jpg"> <img class="img-responsive" alt="" src="images/linderman/linderman02-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/linderman/linderman03.jpg"> <img class="img-responsive" alt="" src="images/linderman/linderman03-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/linderman/linderman04.jpg"> <img class="img-responsive" alt="" src="images/linderman/linderman04-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/linderman/linderman05.jpg"> <img class="img-responsive" alt="" src="images/linderman/linderman05-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
+                <div class="row">
+                    <div class="list-group gallery col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images\erub\erub01.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images\erub\erub01-thumb.jpg" />
+                                    <figcaption><cite>Coming of the Light<i>, 2006.</i></cite><small>Linocut by Racy Oui-Pitt.  Acc 29469</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images\erub\erub02.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images\erub\erub02-thumb.jpg" />
+                                    <figcaption> <cite>Yorke Island memorial cross <i>, 1962.</i></cite> <small>Image no. 6341-0001-0605</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images\erub\erub03.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images\erub\erub03-thumb.jpg" />
+                                    <figcaption> <cite>Yorke Island, church and mission house<i>, 1916.</i></cite> <small>Neg no. 58212</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="Fraser-Island-KGari" data-section="island-3" class="teal-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">Fraser Island &bull; K'Gari</h2> </div>
-                <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/fraser/fraser01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
-                    <p>When Butchulla people of K’gari-Fraser Island observed Captain Cook in 1770, the occasion was recorded in song. Cook recorded the same moment, naming the spot Indian Head on the map — an ephemeral yet significant moment in the history of Butchulla people. However, when they encountered the shipwrecked Captain James Fraser, his wife Eliza and several crew from the Stirling Castle in 1836, all of their lives were forever changed.</p>
-                    <p> Eliza Fraser’s ever-changing tales of her time spent with the people on K’gari-Fraser Island became famous worldwide. Truth and fiction became so entangled it was impossible to know what really happened. There was conjecture about her ‘friendship’ with one Aboriginal man, a ‘nobler savage’. Was Eliza covering up a hidden truth or did she just embellish the facts? Other survivors’ accounts detailing their treatment by Butchulla people contradicted her changing stories. Nonetheless Eliza’s tale became embedded in Australian consciousness, inspiring generations of artists, writers and filmmakers. It also gave governments the added authority to continue pushing Aboriginal people from their traditional lands.</p>
-                    <p> In 1847, Maryborough became the administrative centre for the region and Butchulla and Kabi Kabi nations fell into open conflict with the new settlers. Mass poisonings by the new settlers occurred, and in 1850 many Aboriginal men, women and children were killed when squatters and station-hands ambushed a group camped near the mouth of the Burnett River. The survivors returned to K’gari-Fraser Island following their own reprisal attacks and on Christmas Eve, 1851, the Native Mounted Police set out to arrest any with warrants against them. The expedition became an eight-day series of killings with the largest massacre perpetrated against Butchulla people at Indian Head.</p>
-                    <p>Throughout this period opium addiction and disease ravaged the remaining groups on the island. In 1860, the entire island was gazetted as an Aboriginal reserve, providing some sanctuary but the reserve was later reduced with the remaining population recorded at 230 by 1880. Many believed Aboriginal people were a ‘dying race’. In 1894, the Queensland Government commissioned Archibald Meston to assess the situation. His recommendations formed the basis of The Aboriginal Protection and Restriction of the Sale of Opium Act 1897. Meston was appointed Southern Protector of Aboriginal people in 1898.</p>
-                    <p> Prior to the Act, various church authorities operated the reserves and missions throughout Queensland. Balarrgan mission was established in 1871 for those remaining on K’gari-Fraser Island and Meston set up his own at Bogimbah, but for various reasons they both failed. Those Butchulla people remaining and other displaced groups were relocated to Yarrabah in the north, with some sent to Barrambah, which was much closer to their ancestral lands. It is rumoured some Butchulla people escaped into the bush of K’gari-Fraser Island.</p>
-                    <p> In 2014, Butchulla people were awarded Native Title rights over k’gari-Fraser Island, honouring the courage and determination of K’gari’s Traditional Owners, past and present, and ensuring the continuation of their culture into the future. </p>
-                </div>
-            </div>
-            <!--  end row-->
-            <div class="row">
-                <div class="list-group gallery col-sm-8 col-sm-offset-2">
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser01.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser01-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser02.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser02-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser03.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser03-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser04.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser04-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser05.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser05-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/fraser/fraser06.jpg"> <img class="img-responsive" alt="" src="images/fraser/fraser06-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
+        </section>
+        <section id="Lindeman-Island-Yarra-Kimba" data-section="island-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="">Lindeman Island &bull; Yarra-Kimba</h2> </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/lindeman/lindeman03-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
+                        <p>Located in the heart of the Whitsunday group of islands, Lindeman Island remained untouched by Europeans until 120 years ago. Passing through the area, Captain Cook recorded Aboriginal people paddling an outrigger canoe of a type he had not encountered. In 1802, Captain Flinders reported campfires on nearby Whitsunday Island and in 1868, Commander Bingham, aboard the Virago, stated Lindeman was ‘the only island in the area where natives were seen…’</p>
+                        <p>Like other parts of Australia, the Ngaro people were involved in conflicts with Europeans moving onto their traditional lands. Developing a reputation for being fiercely independent and eluding capture in the 1860s, they reportedly ‘chased off’ ships moored in the area, even boarding them and setting them alight. Despite their resistance, the Ngaro population plummeted. They too succumbed to disease and ‘dispersal’, mostly to Palm Island. Many were recruited into the pearling industry in the Torres Strait.</p>
+                        <p>The beauty and wonder of the island group soon came to the attention of others.</p>
+                        <p>Marine biologist and Queensland’s Commissioner of Fisheries (1889-92), Englishman William Saville-Kent arrived to survey the state’s oyster sites. Instead, he fell instantly in love with the marine ecosystem. After publishing his research in The Great Barrier Reef of Australia: Its Products and Potentialities (1893), scientific interest grew, culminating in the formation of the Great Barrier Reef Committee of the Royal Geographic Society of Australasia in 1922. An early expedition to Lindeman Island studied the reef in 1923.</p>
+                        <p>Early expeditioner and school teacher Monty Embury was joined by his brother Arch and photographer friend Otho Webb, along with Mel Ward, guest lecturer and crustacean expert from the Australian Museum, and other helpers on the first ‘Embury Expedition’. It was hailed a success with 100 people enrolling in the scientific-based recreational holiday over four weeks in 1928-29.</p>
+                        <p>The Nicolson family, wool producers on Lindeman Island since 1923, hosted the expedition. Overnight they became tourism operators, taking advantage of the boom before and after the Second World War. Renowned Brisbane-based architect Karl Langer was commissioned to design part of the complex.</p>
+                        <p>Exotic images of coconut palms and Indigenous people dressed in grass skirts and leis performing the hula and hunting turtles mimicked classic Pacific symbolism. Aboriginal, Torres Strait Islander and Australian South Sea Islander people were recruited as a source of cheap labour on the islands.</p>
+                        <p>Lindeman Island was sold to P&amp;O in 1978. Pictorial representation of an idealised ‘Pacific Islander’ trope disappeared from the promotional material, reflecting changing attitudes in the late 1960s and early 1970s as well as the final disappearance of the Ngaro from their island homes.</p>
+                        <p>The island resort was closed in 2011 following extensive damage caused by Cyclone Yasi. It is set to undergo a $600 million eco-tourism upgrade and is expected to reopen by 2022.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="ST-Helena-Island-Noogoon" data-section="island-4" data-stellar-background-ratio="0.3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">ST Helena Island &bull; Noogoon</h2> </div>
-                <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/island.png" width="100%" class="img-responsive" /></div>
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
-                    <p>Middens, or mounds containing debris from eating shellfish and other food, located on St Helena Island indicate it was visited by Aboriginal people hunting for dugong, flying fox and shellfish.</p>
-                    <p>St Helena, in Moreton Bay, became a penal colony when Brisbane’s only prison at Petrie Terrace was overflowing in the mid-1860s. Resorting to prison hulks moored near the mouth of the Brisbane River, convicts were transferred to St Helena to clear scrub, sink wells, and to quarry stone for a new quarantine station and prison accommodation.</p>
-                    <p>In 1867, St Helena was declared a penal prison. Housing some of the country’s worst offenders, the prison was a place of real punishment. St Helena Island gained a reputation as the “hell hole of the Pacific” and many prisoners committed suicide.</p>
-                    <p>As attitudes towards crime and punishment shifted, a move towards ‘productive labour’ saw St Helena Island transform. Prisoner skills were used in carpentry, boot-making, tailoring, tin smithing, baking and butchery. The island was considered a model prison and reclassified a Prison Farm in the early 1920s.</p>
-                    <p>Patrick Roche entered the prison service at Boggo Road Gaol in Brisbane in 1904. After three months he transferred to St Helena Island, becoming Acting Superintendent in 1926. His motto – “treat men as men and not as beasts and they will respond”.</p>
-                    <p>It is unclear whether Roche introduced the ‘honour system’ of rehabilitation. He believed prisoners were honour-bound to not try to escape and in return, given privileges and better living conditions.</p>
-                    <p>After Roche was transferred to Rockhampton in 1931, the honour system on St Helena faded away. He was unable to convince government of the merits of the system and was never given any official recognition for his work on St Helena Island. Authorities continued to emphasise punishment over rehabilitation.</p>
-                    <p>Following years of building neglect, prisoners were progressively moved to Boggo Road Gaol, leaving only ‘low-risk’ prisoners behind to maintain agricultural enterprises and to dismantle the buildings. It officially closed in December 1932.</p>
-                    <p>Following failed tourism ventures, Brisbane City Council handed St Helena back to the State Government in 1939 and the island was leased as a dairy farm until 1973. In 1979, the island was gazetted as a national park and the following year, as a site of historic significance — the first in Queensland. </p>
+                <div class="row">
+                    <div class="list-group gallery col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/lindeman/lindeman01.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/lindeman/lindeman01-thumb.jpg" />
+                                    <figcaption><cite>Looking across from Lindeman Island<i>, not dated.</i></cite> <small>Watercolour by Frank Rowland. Acc 29706</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/lindeman/lindeman02.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/lindeman/lindeman02-thumb.jpg" />
+                                    <figcaption> <cite>Boat workers, Lindeman Island, Queensland<i>, not dated.</i></cite> <small>Neg no. 75976</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/lindeman/lindeman03.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/lindeman/lindeman03-thumb.jpg" />
+                                    <figcaption> <cite>The Great Barrier Reef of Australia<i>, 1893.</i></cite> <small>By William Saville-Kent. Plate XV. RBHMON sav</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/lindeman/lindeman04.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/lindeman/lindeman04-thumb.jpg" />
+                                    <figcaption> <cite>Lindeman Island luggage label<i>, ca. 1937.</i></cite> <small>RBJ 741.67 lin</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/lindeman/lindeman05.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/lindeman/lindeman05-thumb.jpg" />
+                                    <figcaption> <cite>Lindeman Is. Great Barrier Reef<i>, ca. 1940.</i></cite> <small>Poster by Frank Rowland. HPT TOU 052</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!--  end row-->
-            <div class="row">
-                <div class="list-group gallery col-sm-8 col-sm-offset-2">
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
+        </section>
+        <section id="Fraser-Island-KGari" data-section="island-3" class="teal-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="">Fraser Island &bull; K'Gari</h2> </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/fraser/fraser01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
+                        <p>When Butchulla people of K’gari-Fraser Island observed Captain Cook in 1770, the occasion was recorded in song. Cook recorded the same moment, naming the spot Indian Head on the map — an ephemeral yet significant moment in the history of Butchulla people. However, when they encountered the shipwrecked Captain James Fraser, his wife Eliza and several crew from the Stirling Castle in 1836, all of their lives were forever changed.</p>
+                        <p> Eliza Fraser’s ever-changing tales of her time spent with the people on K’gari-Fraser Island became famous worldwide. Truth and fiction became so entangled it was impossible to know what really happened. There was conjecture about her ‘friendship’ with one Aboriginal man, a ‘nobler savage’. Was Eliza covering up a hidden truth or did she just embellish the facts? Other survivors’ accounts detailing their treatment by Butchulla people contradicted her changing stories. Nonetheless Eliza’s tale became embedded in Australian consciousness, inspiring generations of artists, writers and filmmakers. It also gave governments the added authority to continue pushing Aboriginal people from their traditional lands.</p>
+                        <p> In 1847, Maryborough became the administrative centre for the region and Butchulla and Kabi Kabi nations fell into open conflict with the new settlers. Mass poisonings by the new settlers occurred, and in 1850 many Aboriginal men, women and children were killed when squatters and station-hands ambushed a group camped near the mouth of the Burnett River. The survivors returned to K’gari-Fraser Island following their own reprisal attacks and on Christmas Eve, 1851, the Native Mounted Police set out to arrest any with warrants against them. The expedition became an eight-day series of killings with the largest massacre perpetrated against Butchulla people at Indian Head.</p>
+                        <p>Throughout this period opium addiction and disease ravaged the remaining groups on the island. In 1860, the entire island was gazetted as an Aboriginal reserve, providing some sanctuary but the reserve was later reduced with the remaining population recorded at 230 by 1880. Many believed Aboriginal people were a ‘dying race’. In 1894, the Queensland Government commissioned Archibald Meston to assess the situation. His recommendations formed the basis of The Aboriginal Protection and Restriction of the Sale of Opium Act 1897. Meston was appointed Southern Protector of Aboriginal people in 1898.</p>
+                        <p> Prior to the Act, various church authorities operated the reserves and missions throughout Queensland. Balarrgan mission was established in 1871 for those remaining on K’gari-Fraser Island and Meston set up his own at Bogimbah, but for various reasons they both failed. Those Butchulla people remaining and other displaced groups were relocated to Yarrabah in the north, with some sent to Barrambah, which was much closer to their ancestral lands. It is rumoured some Butchulla people escaped into the bush of K’gari-Fraser Island.</p>
+                        <p> In 2014, Butchulla people were awarded Native Title rights over k’gari-Fraser Island, honouring the courage and determination of K’gari’s Traditional Owners, past and present, and ensuring the continuation of their culture into the future. </p>
                     </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="http://placehold.it/300x320.png"> <img class="img-responsive" alt="" src="http://placehold.it/320x320" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                            <!-- text-right / end -->
-                        </a>
-                    </div>
-                    <!-- col-6 / end -->
                 </div>
-                <!-- list-group / end -->
-            </div>
-            <!-- row / end -->
-        </div>
-    </section>
-    <section id="#Peel-Island-Teerk-Ro-Ra" data-section="island-5" data-stellar-background-ratio="0.3" class="grey-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="">Peel Island &bull; Teerk Ro Ra</h2> </div>
-                <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/peel/peel01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
-                    <p>Peel Island (Teerk Ro Ra, meaning ‘place of many shells’) is located in Moreton Bay. Originally inhabited by Aboriginal people, it was a place for feasting and ceremonial activity. From 1874 it was used as a quarantine station before briefly becoming an asylum for vagrants and finally a leprosarium (leper colony) in 1907.</p>
-                    <p>When Phyllis Ebbage, a young wife and mother was transferred to Peel Island, she barely knew why. Her family and doctor agreed not to tell her she had contracted leprosy and was being sent to Peel Island from Townsville. She would not see her two small daughters for another eight years.</p>
-                    <p>After moving to Brisbane, and desperately missing his wife, her husband Les hatched a plan. He bought a sailing boat and made weekly visits to Peel. On one secret visit, he was spotted and arrested after a short pursuit. Les faced court and was fined £10. The local newspapers sparked an outpouring of public sympathy, creating a mood for change.</p>
-                    <p>Hansen’s disease (leprosy) was widely misunderstood and fearful government authorities forcibly removed people from communities. Patients were towed behind the island’s dedicated boat in a dinghy, their condition considered highly contagious. The leprosarium was designed around the principle of isolation and was underfunded, resulting in inadequate food and poor medical treatment. There was no medical facility until 1925 and the island’s first medical superintendent, Dr Eric Reye, didn’t take up residence until 1947.</p>
-                    <p>While conditions were bad for every patient, those of Aboriginal and Torres Strait Islander, South Sea Islander and Chinese descent had to endure much worse. Segregated, they were accommodated in tents until huts were constructed using bush timbers, cypress cladding, bark roofing and dirt floors. Living conditions were so harsh, the death rate among ‘coloured’ patients was much higher than for white patients.</p>
-                    <p>Phyllis Ebbage spent 13 years on Peel Island, from 1939 to 1952. For years she returned negative samples for leprosy but was never allowed to leave Peel Island. It is unclear whether she ever had the disease at all.</p>
-                    <p>Major breakthroughs in treatment using sulfone-derived drugs meant patient numbers dropped. The leprosarium closed in 1959 with the last 10 patients transported to the Princess Alexandra Hospital in Brisbane. Peel Island was handed over to Queensland’s National Parks and Wildlife Department and in 1993 was heritage listed for its ‘outstanding cultural heritage’.</p>
+                <div class="row">
+                    <div class="list-group gallery col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser01.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser01-thumb.jpg" />
+                                    <figcaption> <cite>Portrait of three aboriginal women who were removed from Fraser Island<i>, not dated.</i></cite> <small>Neg no. 31352</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser02.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser02-thumb.jpg" />
+                                    <figcaption> <cite>The Aboriginal problem in Queensland<i>, 1902.</i></cite> <small>By William Lees. RBJ 305.89915 lee</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser03.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser03-thumb.jpg" />
+                                    <figcaption> <cite>Unidentified aboriginal woman, Fraser Island<i>, not dated.</i></cite> <small>Neg no. 75998</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser04.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser04-thumb.jpg" />
+                                    <figcaption> <cite>‘Mrs Fraser in search of water’ (engraving), appeared in “Shipwreck of the Stirling Castle…”<i>, 1838.</i></cite> <small>RBJ 910.453 cur</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser05.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser05-thumb.jpg" />
+                                    <figcaption> <cite>‘Mrs Fraser’ (engraving), appeared in “Shipwreck of the Stirling Castle…”<i>, 1838.</i></cite> <small>RBJ 910.453 cur</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/fraser/fraser06.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/fraser/fraser06-thumb.jpg" />
+                                    <figcaption> <cite>‘Mrs Fraser’s escape from the savages’ (engraving), appeared in “Shipwreck of the Stirling Castle…”<i>, 1838.</i></cite> <small>RBJ 910.453 cur</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="list-group gallery col-sm-8 col-sm-offset-2">
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/peel/peel01.jpg"> <img class="img-responsive" alt="" src="images/peel/peel01-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
+        </section>
+        <section id="ST-Helena-Island-Noogoon" data-section="island-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="">ST Helena Island &bull; Noogoon</h2> </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/helena/helena02-thumb@2x.jpg" width="100%" class="img-responsive" /></div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
+                        <p>Middens, or mounds containing debris from eating shellfish and other food, located on St Helena Island indicate it was visited by Aboriginal people hunting for dugong, flying fox and shellfish.</p>
+                        <p>St Helena, in Moreton Bay, became a penal colony when Brisbane’s only prison at Petrie Terrace was overflowing in the mid-1860s. Resorting to prison hulks moored near the mouth of the Brisbane River, convicts were transferred to St Helena to clear scrub, sink wells, and to quarry stone for a new quarantine station and prison accommodation.</p>
+                        <p>In 1867, St Helena was declared a penal prison. Housing some of the country’s worst offenders, the prison was a place of real punishment. St Helena Island gained a reputation as the “hell hole of the Pacific” and many prisoners committed suicide.</p>
+                        <p>As attitudes towards crime and punishment shifted, a move towards ‘productive labour’ saw St Helena Island transform. Prisoner skills were used in carpentry, boot-making, tailoring, tin smithing, baking and butchery. The island was considered a model prison and reclassified a Prison Farm in the early 1920s.</p>
+                        <p>Patrick Roche entered the prison service at Boggo Road Gaol in Brisbane in 1904. After three months he transferred to St Helena Island, becoming Acting Superintendent in 1926. His motto – “treat men as men and not as beasts and they will respond”.</p>
+                        <p>It is unclear whether Roche introduced the ‘honour system’ of rehabilitation. He believed prisoners were honour-bound to not try to escape and in return, given privileges and better living conditions.</p>
+                        <p>After Roche was transferred to Rockhampton in 1931, the honour system on St Helena faded away. He was unable to convince government of the merits of the system and was never given any official recognition for his work on St Helena Island. Authorities continued to emphasise punishment over rehabilitation.</p>
+                        <p>Following years of building neglect, prisoners were progressively moved to Boggo Road Gaol, leaving only ‘low-risk’ prisoners behind to maintain agricultural enterprises and to dismantle the buildings. It officially closed in December 1932.</p>
+                        <p>Following failed tourism ventures, Brisbane City Council handed St Helena back to the State Government in 1939 and the island was leased as a dairy farm until 1973. In 1979, the island was gazetted as a national park and the following year, as a site of historic significance — the first in Queensland. </p>
                     </div>
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/peel/peel02.jpg"> <img class="img-responsive" alt="" src="images/peel/peel02-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
+                </div>
+                <div class="row">
+                    <div class="list-group gallery col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/helena/helena01.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/helena/helena01-thumb.jpg" />
+                                    <figcaption> <cite>Crabs hanging from verandah ceiling…, Chief Warder's House<i>, ca. 1920.</i></cite> <small>Neg no. 133373</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/helena/helena02.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/helena/helena02-thumb.jpg" />
+                                    <figcaption> <cite>St Helena tram car<i>, ca. 1920.</i></cite> <small>Neg no. 133409</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/helena/helena03.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/helena/helena03-thumb.jpg" />
+                                    <figcaption> <cite>Christmas dinner, St Helena<i>, ca. 1920.</i></cite> <small>Neg no. 133376</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
                     </div>
-                    <!--
-                    <div class="col-sm-4 col-xs-6 gallery-item">
-                        <a class="fancybox" rel="ligthbox" href="images/peel/peel03.jpg"> <img class="img-responsive" alt="" src="images/peel/peel03-thumb.jpg" />
-                            <div class="text-right"> <small class="text-muted">Image Title</small> </div>
-                        </a>
-                    </div>--></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="Peel-Island-Teerk-Ro-Ra" data-section="island-5" class="grey-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="">Peel Island &bull; Teerk Ro Ra</h2> </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center island-hero-img"> <img src="images/peel/peel01-thumb@2x.jpg" width="100%" class="img-responsive" /> </div>
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-12 island-text">
+                        <p>Peel Island (Teerk Ro Ra, meaning ‘place of many shells’) is located in Moreton Bay. Originally inhabited by Aboriginal people, it was a place for feasting and ceremonial activity. From 1874 it was used as a quarantine station before briefly becoming an asylum for vagrants and finally a leprosarium (leper colony) in 1907.</p>
+                        <p>When Phyllis Ebbage, a young wife and mother was transferred to Peel Island, she barely knew why. Her family and doctor agreed not to tell her she had contracted leprosy and was being sent to Peel Island from Townsville. She would not see her two small daughters for another eight years.</p>
+                        <p>After moving to Brisbane, and desperately missing his wife, her husband Les hatched a plan. He bought a sailing boat and made weekly visits to Peel. On one secret visit, he was spotted and arrested after a short pursuit. Les faced court and was fined £10. The local newspapers sparked an outpouring of public sympathy, creating a mood for change.</p>
+                        <p>Hansen’s disease (leprosy) was widely misunderstood and fearful government authorities forcibly removed people from communities. Patients were towed behind the island’s dedicated boat in a dinghy, their condition considered highly contagious. The leprosarium was designed around the principle of isolation and was underfunded, resulting in inadequate food and poor medical treatment. There was no medical facility until 1925 and the island’s first medical superintendent, Dr Eric Reye, didn’t take up residence until 1947.</p>
+                        <p>While conditions were bad for every patient, those of Aboriginal and Torres Strait Islander, South Sea Islander and Chinese descent had to endure much worse. Segregated, they were accommodated in tents until huts were constructed using bush timbers, cypress cladding, bark roofing and dirt floors. Living conditions were so harsh, the death rate among ‘coloured’ patients was much higher than for white patients.</p>
+                        <p>Phyllis Ebbage spent 13 years on Peel Island, from 1939 to 1952. For years she returned negative samples for leprosy but was never allowed to leave Peel Island. It is unclear whether she ever had the disease at all.</p>
+                        <p>Major breakthroughs in treatment using sulfone-derived drugs meant patient numbers dropped. The leprosarium closed in 1959 with the last 10 patients transported to the Princess Alexandra Hospital in Brisbane. Peel Island was handed over to Queensland’s National Parks and Wildlife Department and in 1993 was heritage listed for its ‘outstanding cultural heritage’.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="list-group gallery col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/peel/peel01.jpg"> <img class="img-responsive" alt="" src="images/peel/peel01-thumb.jpg" />
+                                <figure>
+                                    <figcaption> <cite>Aboriginal boys at the gate of the Anglican Church of the Good Samaritan on Peel Island<i>, ca. 1936.</i></cite> <small>Neg no. 33628</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/peel/peel02.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/peel/peel02-thumb.jpg" />
+                                    <figcaption> <cite>Phyllis Ebbage sitting on yacht<i>, ca. 1940s.</i></cite> <small>Acc 9997/14</small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-xs-6 gallery-item">
+                            <a class="fancybox" rel="ligthbox" href="images/peel/peel03.jpg">
+                                <figure> <img class="img-responsive" alt="" src="images/peel/peel03-thumb.jpg" />
+                                    <figcaption> <cite><i></i></cite> <small></small> </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Learning notes -->
+        <!-- notes not ready
     <section id="section-learning" data-section="learning">
         <div class="container">
             <div class="row">
@@ -374,10 +377,11 @@ State Library welcomes any further insights and information about the historic p
                     <h2 class="to-animate">Learning</h2>
                     <div class="row">
                         <div class="col-md-12 subtext to-animate section_text">
+                            
                             <div id="learning-notes-1" class="col-sm-3 col-sm-offset-2  learning-notes-container"> <img src="images/Our_Sporting_Greats_Resource_List.jpg" class="img-responsive learning-notes-image" width="100%" alt="Resource Kit" />
                                 <h3 class="learning-notes-heading">Resource Kit</h3> <a href="Our_Sporting_Greats_Resource_List.pdf" target="_blank" class="btn btn-primary">Download PDF</a>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">Download PDF</a> --></div>
-                            <div id="learning-notes-2" class="col-sm-3 col-sm-offset-2 learning-notes-container"> <img src="images/Learning_Resources.jpg" class="img-responsive learning-notes-image" width="100%" alt="Learning Notes" />
+                                
+                            <div id="learning-notes-2" class="col-sm-4 col-sm-offset-4 learning-notes-container"> <img src="images/Learning_Resources.jpg" class="img-responsive learning-notes-image" width="100%" alt="Learning Notes" />
                                 <h3 class="learning-notes-heading">Learning Notes</h3>
                                 <p class="doc-caption"> Coming Soon. </p>
                             </div>
@@ -385,10 +389,11 @@ State Library welcomes any further insights and information about the historic p
                     </div>
                 </div>
             </div>
-            <!-- end container -->
+
         </div>
     </section>
-    <!-- Footer -->
+-->
+    </main>
     <footer>
         <div id="footer" class="footer-container container">
             <div class="pull-left footer_menu">
@@ -405,27 +410,31 @@ State Library welcomes any further insights and information about the historic p
                 <a href="http://www.slq.qld.gov.au" target="_blank"> <img src="images/slq_logo.png" title="State Library of Queensland" alt="State Library of Queensland" width="102px"> </a>
                 <a href="http://www.qld.gov.au" target="_blank"> <img src="images/gov_logo.png" title="Queensland Government" alt="Queensland Government" width="98px"> </a>
             </div>
-            <!-- <div class="slq_logo pull-right"><img src="images/slq_locked_logo.png" width="200px" alt="State Library of Queensland"/></div> --></div>
+        </div>
     </footer>
+    <svg display="none">
+        <symbol id="slqmark" viewbox="0 0 50 50">
+            <title>State Library Queensland Icon</title>
+            <path d="M42.7,34.4c1.9-3.6,2.7-7.8,2.2-12.1C43.6,10.6,33.1,2.1,21.4,3.4C9.6,4.7,1.2,15.3,2.5,27
+		C3.8,38.7,14.3,47.1,26,45.9c3.4-0.4,6.6-1.6,9.3-3.3c0,0,12.1,3.5,12.1,3.5C47.3,45.3,42.7,34.4,42.7,34.4z M24.5,28.8
+		c-0.3,2-1.6,3.2-3.6,3.6c-0.7,0.1-1.4,0.2-2.2,0.1c-2.3-0.2-3.7-1.1-4.2-3c-0.2-0.6-0.2-1.4-0.2-2.2c1.3,0,2.5,0,3.8,0
+		c0,0.6,0,1.2,0.2,1.6c0.2,0.4,0.5,0.6,1.1,0.6c0.6,0,1-0.2,1.2-0.6c0.2-0.4,0.2-1.1,0-1.5c-0.2-0.3-0.6-0.6-1-0.7
+		c-0.4-0.2-0.9-0.3-1.3-0.5c-0.9-0.3-1.7-0.7-2.3-1.2c-0.7-0.5-1.1-1.2-1.3-2.2c-0.1-0.5-0.1-1.1-0.1-1.6c0-0.5,0.1-1,0.3-1.5
+		c0.6-1.6,1.9-2.5,3.9-2.7c0.9-0.1,1.9,0,2.6,0.3c1.3,0.4,2.2,1.2,2.6,2.4c0.2,0.6,0.2,1.4,0.2,2.3c-1.2,0-2.5,0-3.7,0c0,0,0,0,0,0
+		c0-0.8,0-1.6-0.6-1.8c-0.3-0.1-0.8-0.1-1.1,0c-0.3,0.1-0.5,0.4-0.5,0.7c-0.1,0.4,0,0.8,0.1,1.1c0.1,0.3,0.4,0.4,0.6,0.6
+		c0.3,0.1,0.5,0.3,0.8,0.4c0.3,0.1,0.6,0.2,0.8,0.4c0.6,0.2,1.1,0.5,1.7,0.8c1,0.6,1.9,1.3,2.1,2.7C24.7,27.2,24.6,28.1,24.5,28.8z
+		 M33.5,32.2h-7.6v-15h3.8v11.7h3.8V32.2z" fill="#000" /> </symbol>
+    </svg>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Stellar Parallax -->
-    <script src="js/jquery.stellar.min.js"></script>
-    <!-- Counter -->
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/svganimations.js"></script>
-    <!-- References: https://github.com/fancyapps/fancyBox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!-- References: https://github.com/fancyapps/fancyBox --
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <!-- Main JS (Do not remove) -->
-    <script src="js/main.js"></script>
+    <!--
+    <script src="js/main.js"></script>-->
     <script src="js/map.js"></script>
 </body>
 

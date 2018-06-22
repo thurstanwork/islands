@@ -1,0 +1,252 @@
+#header {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    opacity: 1;
+    top: 0;
+    margin-top: 40px;
+}
+
+#slqmark-nav {
+    padding-top: 5px;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.slqmark-nav {
+    fill: #222;
+}
+
+#header .navbar {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#header.navbar-fixed-top #slqmark-nav {
+    display: block !important;
+}
+
+.navbar li a {
+    padding-top: 20px;
+    color: #1c1f40;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff !important;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:hover {
+    color: #00ad4c !important;
+}
+
+#header #navbar li a {
+    position: relative;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#header #navbar li a span {
+    position: relative;
+    display: block;
+    padding-bottom: 2px;
+}
+
+#header #navbar li a span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#header #navbar li a:hover {
+    color: #fff;
+}
+
+#header #navbar li a:hover span:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#header #navbar li.active a span:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#header .navbar-brand {
+    float: left;
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+    color: #000000;
+}
+
+#header.navbar-fixed-top {
+    position: fixed !important;
+    background: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+    top: 0;
+    color: #000000;
+}
+
+#header.navbar-fixed-top .navbar-brand {
+    color: #52d3aa;
+}
+
+#header.navbar-fixed-top #navbar li a {
+    transition: 0.3s;
+    color: #000000;
+}
+
+#header.navbar-fixed-top #navbar li a:hover {
+    color: #79d97c;
+}
+
+#header.navbar-fixed-top #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #00ad4c;
+}
+
+#header.navbar-fixed-top #navbar li.active a span:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#header .navbar-default {
+    border: transparent;
+    background: transparent;
+    border-radius: 0px;
+}
+
+#header .navbar-default .brand-slogan {
+    margin: 28px 0 0 15px;
+    float: left;
+    letter-spacing: 2px;
+    color: #adadad;
+}
+
+#header .navbar-default .brand-slogan em {
+    color: #52d3aa;
+    font-style: normal;
+}
+
+#header a {
+    transition: 0.2s;
+}
+
+.nav-toggle {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-toggle.active i::before,
+.nav-toggle.active i::after {
+    background: #00ad4c;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus,
+.nav-toggle:active {
+    outline: none;
+    border-bottom: none !important;
+}
+
+.nav-toggle i {
+    position: relative;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 25px;
+    height: 3px;
+    color: #00ad4c;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #00ad4c;
+    transition: all .2s ease-out;
+}
+
+.nav-toggle i::before,
+.nav-toggle i::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: #00ad4c;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.nav-toggle i::before {
+    top: -7px;
+}
+
+.nav-toggle i::after {
+    bottom: -7px;
+}
+
+.nav-toggle:hover i::before {
+    top: -10px;
+}
+
+.nav-toggle:hover i::after {
+    bottom: -10px;
+}
+
+.nav-toggle.active i {
+    background: transparent;
+}
+
+.nav-toggle.active i::before {
+    top: 0;
+    transform: rotateZ(45deg);
+}
+
+.nav-toggle.active i::after {
+    bottom: 0;
+    transform: rotateZ(-45deg);
+}
+
+.nav-toggle {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    z-index: 21;
+    padding: 6px 0 0 0;
+    display: block;
+    margin: 0 auto;
+    display: none;
+    height: 44px;
+    width: 25px;
+    border-bottom: none !important;
+}
+
+body {
+    scroll-behavior: smooth;
+}

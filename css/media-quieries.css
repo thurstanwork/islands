@@ -1,0 +1,176 @@
+/* Media queries */
+
+@media screen and (max-width: 480px) {
+    .col-xxs-12 {
+        float: none;
+        width: 100%;
+    }
+    #section-about,
+    #section-learning,
+    #section-collections {
+        padding: 4em 0 4em 0;
+    }
+    .gal-container {
+        padding: 0px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .linework {
+        top: 0 !important;
+    }
+    .osg_vis_id {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slqmark_logo img {
+        display: none;
+    }
+    #header {
+        margin-top: 0;
+        background: #fff;
+        color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    }
+    #header .navbar-brand {
+        color: #52d3aa !important;
+    }
+    #header #navbar li a {
+        color: #000000;
+        transition: 0.3s;
+    }
+    #header #navbar li a:hover {
+        color: #00ad4c !important;
+    }
+    #header #navbar li a span:before {
+        background: transparent !important;
+    }
+    #header #navbar li.active a {
+        background: transparent;
+        background: none;
+        color: #00ad4c !important;
+    }
+    #header #navbar li.active a span:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    ul.footer_menu_list {
+        padding-left: 0;
+    }
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    #learning-notes-1 {
+        margin-bottom: 80px;
+    }
+    .learning-notes-container img {
+        width: 80%;
+        margin-left: 10%;
+    }
+    h3.learning-notes-heading {
+        margin-top: 40px !important;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .slqmark-nav {
+        display: block !important;
+    }
+    .row-bottom-padded-sm {
+        padding-bottom: 2em;
+    }
+    .row-bottom-padded-lg {
+        padding-bottom: 2em;
+    }
+    .nav-toggle {
+        margin-top: 5px;
+    }
+    .navbar-collapse {
+        padding-bottom: 20px;
+    }
+    .row-bottom-padded-md {
+        padding-bottom: 2em;
+    }
+    #section-about {
+        text-align: center;
+    }
+    .video_container:last-child {
+        margin-bottom: 0;
+    }
+    #section-foreword {
+        text-align: center;
+    }
+    .foreword-image {
+        margin-left: 0px !important;
+        margin-bottom: 40px;
+        width: 100% !important;
+        float: none !important;
+    }
+    #header .navbar-default {
+        margin-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .footer-container {
+        text-align: center;
+    }
+    .footer_menu {
+        float: none !important;
+    }
+    .slq_logo {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .nav {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .nav {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 20em) {
+    body {
+        min-width: 240px;
+    }
+    #getActiveMQ-watcher {
+        font-family: "break-1";
+    }
+}
+
+@media (min-width: 30em) {
+    #getActiveMQ-watcher {
+        font-family: "break-2";
+    }
+}
+
+@media (min-width: 37.5em) {
+    #getActiveMQ-watcher {
+        font-family: "break-3";
+    }
+}
+
+@media (min-width: 48em) {
+    #getActiveMQ-watcher {
+        font-family: "break-4";
+    }
+}
+
+@media (min-width: 60em) {
+    #getActiveMQ-watcher {
+        font-family: "break-5";
+    }
+}
