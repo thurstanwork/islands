@@ -44,7 +44,7 @@
     };
     window.watchResize(function () {
         var size = window.getActiveMQ().replace("break-", "");
-        window.WesternUnion = window.getActiveMQ();
+        window.islandsMap = window.getActiveMQ();
     });
     /*! A fix for theWebKit Resize Bug https://bugs.webkit.org/show_bug.cgi?id=53166. */
     $(window).on('load', function () {
@@ -56,7 +56,7 @@
     });
 }(jQuery, window));
 // Resize function to trigger different scripts/classes
-function westernUnionResize($, window) {
+function screenResize($, window) {
     window.watchResize = function (callback) {
         var resizing;
 
@@ -76,7 +76,7 @@ function westernUnionResize($, window) {
         callback();
     };
     window.watchResize(function () {
-        size = window.WesternUnion.replace("break-", "");
+        size = window.islandsMap.replace("break-", "");
         if (size < 3) {
             $('nav').addClass('mobile-menu');
         }
@@ -93,7 +93,7 @@ function westernUnionResize($, window) {
         }
     });
 }
-westernUnionResize(jQuery, window);
+screenResize(jQuery, window);
 // Map modal
 (function ($, window) {
     var $body = $('body');
@@ -112,7 +112,6 @@ westernUnionResize(jQuery, window);
     function buildmapInfo(location, title, mapText, link) {
         $('<div id="map-info">').addClass(location).fadeIn('slow').appendTo('#places-map .map').html('<h3>' + title + '</h3>' + '<a href="' + link + '">Read More</a>' + '<span class="close-btn"></span>');
         // Close map info if click anywhere outside of it
-        /* http://stackoverflow.com/questions/1403615/use-jquery-to-hide-a-div-when-the-user-clicks-outside-of-it */
         var mapInfo = $('#map-info');
         $(document).mouseup(function (e) {
             if (!mapInfo.is(e.target) && mapInfo.has(e.target).length === 0) {

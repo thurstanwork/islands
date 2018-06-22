@@ -1,39 +1,79 @@
-/*Footer*/
+/* SLQ Standard footer for microsites */
+
+
+/*** FOOTER ***/
 
 footer {
-    background-color: #000000;
-    padding: 25px 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-flow: wrap;
+    padding-top: .8rem;
+    padding-bottom: 2rem;
+    background: hsla(0, 0%, 10%);
 }
 
-.footer_menu_list li {
+footer #logos {
     display: inline-flex;
-    padding: 10px 15px;
+    justify-content: left;
+    align-content: flex-start;
 }
 
-.footer_menu_list li:first-child {
-    padding-left: 0;
+footer #logos a {
+    display: flex;
+    align-items: flex-start;
+    margin: .5rem;
+    max-width: 150px;
 }
 
-.footer_menu_list a {
-    color: #ffffff;
-    font-size: 11px;
+footer img {
+    width: 100%;
 }
 
-.footer_menu_list a:hover {
-    color: #91d8c6;
-}
-
-.slq_logo {
-    margin-top: -5px;
-    width: 205px;
-}
-
-.slq_logo a {
+footer a {
+    color: white;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
+    font-size: 1.2rem;
 }
 
-.lockedLogo img {
-    display: inline-block;
+footer em {
+    color: white;
+}
+
+footer ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    display: inline-flex;
+    padding-top: .4rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    padding-bottom: .4rem;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+    footer ul {
+        padding-left: 0;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+}
+
+
+/* Tablet & Desktop */
+
+@media screen and (min-width: 768px) {
+    footer ul {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
 }

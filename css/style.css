@@ -22,7 +22,9 @@
 /* Components */
 
 @import url("gallery.css");
-@import url("fancybox.css");
+
+/*@import url("fancybox.css");*/
+
 @import url("video.css");
 @import url("animation.css");
 
