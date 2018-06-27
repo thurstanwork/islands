@@ -249,6 +249,13 @@
     border-bottom: none !important;
 }
 
+#mobile-navbar-title {
+    display: none;
+}
+
+
+/* Smooth scrolling in latest spec */
+
 body {
     scroll-behavior: smooth;
 }

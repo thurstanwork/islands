@@ -83,16 +83,16 @@
     var windowScroll = function () {
         var lastScrollTop = 0;
         $(window).scroll(function (event) {
-            var header = $('#fh5co-header')
+            var header = $('#header')
                 , scrlTop = $(this).scrollTop();
             if (scrlTop > 500 && scrlTop <= 2000) {
-                header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+                header.addClass('navbar-fixed-top animated slideInDown');
             }
             else if (scrlTop <= 500) {
                 if (header.hasClass('navbar-fixed-top')) {
-                    header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+                    header.addClass('navbar-fixed-top animated slideOutUp');
                     setTimeout(function () {
-                        header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+                        header.removeClass('navbar-fixed-top animated slideInDown slideOutUp');
                     }, 100);
                 }
             }
@@ -120,11 +120,11 @@
         }
     };
     var introAnimate = function () {
-        if ($('#fh5co-intro').length > 0) {
-            $('#fh5co-intro').waypoint(function (direction) {
+        if ($('#intro').length > 0) {
+            $('#intro').waypoint(function (direction) {
                 if (direction === 'down' && !$(this.element).hasClass('animated')) {
                     setTimeout(function () {
-                        $('#fh5co-intro .to-animate').each(function (k) {
+                        $('#intro .to-animate').each(function (k) {
                             var el = $(this);
                             setTimeout(function () {
                                 el.addClass('fadeInRight animated');

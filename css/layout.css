@@ -159,7 +159,7 @@ section {
     padding-bottom: 2em;
 }
 
-.fh5co-animated {
+.animated {
     animation-duration: .3s;
     animation-fill-mode: both;
 }
