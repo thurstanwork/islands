@@ -36,10 +36,15 @@ footer a {
     font-size: 1.2rem;
 }
 
+footer a:hover {
+    color: #91d8c6;
+}
+
+
+}
 footer em {
     color: white;
 }
-
 footer ul {
     display: inline-flex;
     align-items: center;
@@ -48,7 +53,6 @@ footer ul {
     list-style: none;
     margin-bottom: 0;
 }
-
 footer ul li {
     display: inline-flex;
     padding-top: .4rem;
@@ -57,9 +61,7 @@ footer ul li {
     padding-bottom: .4rem;
 }
 
-
 /* Mobile */
-
 @media screen and (max-width: 768px) {
     footer ul {
         padding-left: 0;
@@ -68,9 +70,7 @@ footer ul li {
     }
 }
 
-
 /* Tablet & Desktop */
-
 @media screen and (min-width: 768px) {
     footer ul {
         flex-direction: row;

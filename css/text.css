@@ -62,12 +62,11 @@ h3 {
     font-style: italic;
 }
 
-.small_print_text {
-    font-size: 12px;
-    text-align: center;
-    font-style: italic;
+.video-container figcaption cite {
+    display: none;
 }
 
-.small_text {
-    font-size: 10px;
+.video-container figcaption small {
+    display: block;
+    font-size: 1.2rem;
 }

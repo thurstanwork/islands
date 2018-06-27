@@ -1,4 +1,3 @@
-;
 (function () {
     'use strict';
     // iPad and iPod detection

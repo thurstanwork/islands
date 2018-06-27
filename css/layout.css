@@ -1,6 +1,5 @@
 main {
-    /* position: absolute; */
-    /* top: 0; */
+    scroll-behavior: smooth;
 }
 
 .panel-intro {
